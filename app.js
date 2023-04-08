@@ -7,17 +7,16 @@ getFactButton.addEventListener('click', (event) => {
     event.preventDefault(); 
     inputValue = inputField.value; 
     console.log(inputValue);
-    getNumberTrivia(inputValue);
     inputField.placeholder="";
-    
+    getNumberTrivia(inputValue);
 });
 
 getRandomFactButton.addEventListener('click', () => {
     inputValue = Math.floor(Math.random() * 1000); 
     console.log(inputValue); 
-    getNumberTrivia(inputValue);
     inputField.value=inputValue;
     inputField.placeholder="";
+    getNumberTrivia(inputValue);
   });
 
 function getNumberTrivia(inputValue) {
