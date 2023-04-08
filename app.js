@@ -37,6 +37,7 @@ function getNumberTrivia(inputValue) {
         console.log(data); // Do something with the returned trivia fact
       })
       .catch(error => {
+        inputField.value='';
         console.error('There was a problem with the fetch operation:', error);
       });
   }
